@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khoa Huynh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3b84d7aab4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id ="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software/Cybersecurity Engineering</p>
+            <h1>Hi There, I'm <span>Khoa</span><br>Huynh from Dallas, Texas </h1>
+        </div>
+    </div>
+</div>
+
+<!-- -------------------about-------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I'm Khoa Huynh, a Senior at UTD pursuing a bachelor's degree in CS,
+                     and I'm actively seeking an internship opportunity. 
+                     With a strong foundation in teamwork, I have experience collaborating in diverse environments. 
+                     Proficient in C, C++, Java, AWS, and essential MS/software tools for software roles. 
+                     My commitment to continuous learning ensures a positive impact on your team. 
+                     If given the opportunity, I plan to understand my coworkers' strengths, 
+                     contribute effectively to team and project goals, 
+                     and quickly grasp company policies and procedures to add value to your organization.
+                     I am excited about the prospect of bringing my skills and enthusiasm to contribute to your team.</p>
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                        <p class="tab-links" onclick="opentab('awards')">Awards</p>
+                      </div>
+
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span><br>Assembly, C, C++, Java, Python, Prolog, HTML</li>
+                            <li><span>Operating Systems/Cloud</span><br>Windows, Linux, Amazon Web Service</li>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>Cybersecurity</span><br>Security Auditing/Risk Management</li>
+                        </ul>
+                      </div>
+
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>University of Texas, Erik Jonsson School of Engineering and Computer Science - 2024</span><br>Bachelor of Science in Computer Science</li>
+                            <li><span>Dallas College - 2022</span><br>Associate of Science, GPA: 3.9</li>
+                            <li><span>Portland Community College - 2020 to 2021</span><br>Associate of Science, GPA: 4.0</li>
+                        </ul>
+                      </div>
+
+                      <div class="tab-contents" id="awards">
+                        <ul>
+                            <li><span>Phi Theta Kappa Academic Excellence Scholarship</span><br>Honor Society at University of Texas at Dallas - January 2023</li>
+                            <li><span>Comet Transfer Academic Excellence Scholarship</span><br>With GPA: 3.9 at University of Texas at Dallas - January 2023</li>
+                            <li><span>State Farm STEM Scholarship</span><br>Dalls College Foundation - June 2022</li>
+                            <li><span>Muller Scholarship</span><br>Portland Community College Foundation Foundation - July 2021</li>
+                            <li><span>J.K.G. Scholarship</span><br>Portland Community College Foundation Foundation - June 2020</li>
+                        </ul>
+                      </div>
+
+                      <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>Google Cybersecurity Professional Certificate</span><br>by Google - June 2024</li>
+                            <li><span>Amazon Web Services Cloud Practitioner Certificate</span><br>by Amazon - April 2024</li>
+                            <li><span>Career Essentials in Data Analysis by Microsoft and LinkedIn</span><br>by Linkedln & Microsoft - February 2024</li>
+                            <li><span>Career Essentials in Cybersecurity by Microsoft and LinkedIn</span><br>by Linkedln & Microsoft - February 2024</li>
+                        </ul>
+                      </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------services---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-wordpress"></i>
+                <h2>Cybersecurity Blog</h2>
+                <p>Welcome to my Cybersecurity Blog! As a passionate learner and practitioner in the field of cybersecurity, I've created this space to share my journey, insights, and lessons learned. Whether you're a fellow cybersecurity enthusiast or someone curious about the field, I hope you'll find these posts informative and engaging. Join me as we delve into the fascinating world of cybersecurity. Let's learn and grow together in creating a safer digital world!</p>
+                <a href="https://khoacyberguard.wordpress.com/">Learn more </a>
+            </div>
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <h2>My Github</h2>
+                <p>Welcome to my GitHub page! Here, you’ll find a collection of projects that showcase my skills and interests in various programming languages and domains. </p>
+                <a href="https://github.com/khoahuynh0110">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-display"></i>
+                <h2>Leetcode</h2>
+                <p>Welcome to my LeetCode profile! Here, you’ll find a collection of my solutions to various coding challenges that I’ve tackled on LeetCode. These solutions span a wide range of difficulty levels and topics, reflecting my commitment to improving my problem-solving skills and knowledge of data structures and algorithms.</p>
+                <a href="https://leetcode.com/u/khoacyberguard/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------------portfolio---------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Tic-Tac-Toe Game</h3>
+                    <p>You can download my source code and run it by MISP.</p>
+                    <a href="https://github.com/khoahuynh0110/TicTacToe"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Binary Search Tree Implementation</h3>
+                    <p>Explore my Binary Tree project! It demonstrates operations like printing, node counting, checking fullness, comparing structures, checking equality, copying, mirroring, checking mirrors, and performing right/left rotations on binary trees. Each operation is exemplified with various trees for easy understanding. Dive in to learn more about binary tree operations! </p>
+                    <a href="https://github.com/khoahuynh0110/Binary-Search-Tree-Implementation"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Hangman Game using FIFO</h3>
+                    <p>This program is a server-client application that simulates a hangman game using FIFOs (named pipes) for secure and managed communication. The server reads motivational quotes from a file and sends a random one to the client upon request. The client, through its own FIFO, communicates with the server to receive quotes. This pipeline-based approach ensures a secure exchange of data between the user and the client. </p>
+                    <a href="https://github.com/khoahuynh0110/Networked-Multiplayer-Game-Implementation"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/khoahuynh0110" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ----------------------------Contact----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Let's Connect</h1>
+                <p><a href="mailto:kay.huynh0110@gmail.com"><i class="fa-solid fa-envelope"></i></a>kay.huynh0110@gmail.com</p>
+                <p><a href="tel:971-407-9309"><i class="fa-solid fa-phone"></i></a>971-407-9309</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Anhhkhoa0110"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/anhh._khoa/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/tran-anh-khoa-huynh"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Khoa Huynh-Resume.pdf" download class="btn btn2">Download My Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Khoa Huynh. This is my Portfolio <i class="fa-solid fa-shield-halved"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links"); 
+    var tabcontents = document.getElementsByClassName("tab-contents"); 
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw8chHPiXhj7v8C8IdH6PbZA0iwb-46Zplqwe7bTT6cYV6SiVmZiW5cd4l8h7SLNhuF/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Submission Successfully!"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
